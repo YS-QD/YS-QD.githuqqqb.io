@@ -218,10 +218,14 @@ footer p {
 }
 
 .character img {
-    width: 300px;
+    width: 500px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.character img:hover {
+    transform: scale(1.2);
 }
 
 .character h2 {
@@ -282,20 +286,19 @@ footer p {
 /* Updated Gallery Grid */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);/*创建一个三列等宽的网格布局*/
+    gap: 20px;/*网格中每个图片间距*/
 }
 
 /* Gallery Items */
 .gallery-item {
     position: relative;
-    overflow: hidden;
+    overflow: hidden;/* 隐藏溢出内容 */
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
-    display: block;
     transition: transform 0.3s ease;
 }
 
